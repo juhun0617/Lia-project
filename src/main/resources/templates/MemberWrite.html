@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member 작성 폼</title>
+    <link href="
+    /css/header2.css" rel="stylesheet">
+</head>
+
+<style>
+    .layout {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+
+    .layout input, select {
+        width: 50%;
+        box-sizing: border-box;
+        margin: 20px auto;
+    }
+
+    .layout button {
+        width: 20%;
+        margin: 20px auto;
+    }
+
+
+</style>
+
+<header>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="/">Lia</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="/teacher/member/registration">회원등록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/delete">회원삭제</a>
+        </li>
+        <li>
+          <a href="/teacher/member/list">회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/attendlist">출석회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/notattendlist">미출석회원목록</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+</header>
+<body>
+<main>
+    <div class="container">
+
+<fieldset>
+
+<legend>Member register</legend>
+  <div class="form-group">
+    <form method='POST' action='/teacher/member/registrationpro'>
+ 
+<div class="form-group">
+  <label for="name" class="col-md-4 control-label">이름</label>
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  id="name"   name="name" placeholder="Name" class="form-control"  type="text"><br>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="birth"   class="col-md-4 control-label" >생일</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="birth" name="birth" placeholder="생일" class="form-control"  type="date">
+    </div>
+  </div>
+</div> 
+<div class="form-group">
+  <label for="phone_num" class="col-md-4 control-label">전화번호</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input id="phone_num" name="phone_num" placeholder="(010)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="sub_phone_num" class="col-md-4 control-label">서브 전화번호</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input id="sub_phone_num" name="sub_phone_num" placeholder="(010)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="address" class="col-md-4 control-label">주소</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input id="address" name="address" placeholder="Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group"> 
+  <label for="gender" class="col-md-4 control-label">State</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select id="gender" name="gender" class="form-control selectpicker" >
+      <option value=" " >Gender</option>
+                      <option>남자</option>
+                <option>여자</option>
+                </select>
+    </div>
+  </div>
+  </div>
+
+
+			<input class='button' type='submit' value='확인'></input>
+		</form>
+
+</div>
+  </fieldset>
+
+
+    </div>
+</main>
+</body>
+</html>

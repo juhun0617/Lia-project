@@ -1,0 +1,13 @@
+package com.attend.liaproject;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class LiaprojectApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

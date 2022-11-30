@@ -1,0 +1,36 @@
+.logo {
+    font-family: "배달의민족 도현";
+    font-size: 3.0em;
+    margin-left: 20px;
+    float : left;
+}
+
+header {
+    background: black;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white
+}
+
+a:visited {
+    text-decoration: none;
+    color: white
+}
+
+a:active {
+    text-decoration: none;
+    color: white
+}
+
+a:hover {
+    text-decoration: none;
+    color: white
+}

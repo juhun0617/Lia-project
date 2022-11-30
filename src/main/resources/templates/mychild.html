@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>출석 리스트 페이지</title>
+    <link href="/css/header2.css" rel="stylesheet">
+	<link href="/css/list.css" rel="stylesheet">
+</head>
+<header>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="/">Lia</a>
+    </div>
+  </div>
+</section>
+    </header>
+
+<div class="layout">
+<table class="fixed_headers">
+        <thead>
+        <tr>
+            <th>이름</th>
+            <th>생일</th>
+            <th>전화번호</th>
+            <th>서브 전화번호</th>
+            <th>주소</th>
+            <th>성별</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <tr th:each="attend : ${list}">
+            <td th:text="${attend.name}"></td>
+            <td th:text="${attend.time}"></td>
+            
+        </tr>
+
+
+        </tbody>
+    </table>
+
+
+</div>
+</body>
+</html>

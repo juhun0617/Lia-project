@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+.main {
+	font-size : 15px;
+	border: solid;
+	border-width:1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	display: flex;
+	width: 700px;
+	height: 300px;
+}
+
+.main .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px 0px 0px 5px;
+	min-width: 267px;
+	height: 100%;
+	background: #f9f9fa;
+}
+
+.main .left .circle {
+	position: absolute;
+	bottom: 0px;
+}
+
+.main .left .text {
+	padding: 40px;
+	text-align: left;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.main .right {
+	border-radius: 5px;
+	width: inherit;
+	height: inherit;
+	padding: 50px;
+	background: #fff;
+	width: 533;
+	height: 100%;
+}
+
+.main .right .title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.main .right .name {
+  transition: .2s;
+	border-radius: 5px;
+	border: solid;
+	border-color: #f5f5f8;
+	border-width: 2px;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+
+.main .right .address {
+	transition: .2s;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: solid;
+	border-color: #f5f5f8;
+	border-width: 2px;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+}
+.main .right .button{
+	transition: .2s;
+	margin-top: 50px; 
+	color: white;
+	font-weight: 700;
+	border-radius: 5px;
+	outline: none;
+	width: 100%;
+	height: 50px;
+	border: 0;
+	background:black;
+}
+
+.main .right .text {
+	transition: .2s;
+	display: block;
+	outline: none;
+	background: none;
+	border: none;
+	margin-top: 12px;
+	text-align: center;
+	font-weight: 700;
+}

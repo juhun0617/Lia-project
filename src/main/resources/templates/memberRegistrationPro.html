@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원등록 완료</title>
+    <link href="/css/header2.css" rel="stylesheet">
+</head>
+<style>
+#register {
+	padding : 150px;
+	justify-items: center;
+	align-items: center;
+	font-size: 1rem;
+	display: grid;
+	width: 100%;
+	height: 20vh;
+	box-sizing: border-box;
+}
+
+target {
+	width: 100%;
+}
+form {
+	padding:30px;
+}
+button {
+	padding: 0.5em;
+	font-size: 14px;
+	border-radius: 4px;
+	background: transparent;
+	border: 2px solid #a7a8aa;
+}
+</style>
+<header>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="/">Lia</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="/teacher/member/registration">회원등록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/delete">회원삭제</a>
+        </li>
+        <li>
+          <a href="/teacher/member/list">회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/attendlist">출석회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/notattendlist">미출석회원목록</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+</header>
+
+<body>
+<div id = "register">
+<div class="target">회원등록이 완료되었습니다.</div>
+<form action="/teacher/select">
+    <button type="submit">돌아가기</button>
+</form>
+</div>
+</body>
+</html>

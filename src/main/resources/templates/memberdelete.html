@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원삭제</title>
+    <link href="/css/header2.css" rel="stylesheet">
+    <link href="/css/memberdelete.css" rel="stylesheet">
+    <link href="/css/list2.css" rel="stylesheet">
+    
+</head>
+<header>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="/">Lia</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="/teacher/member/registration">회원등록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/delete">회원삭제</a>
+        </li>
+        <li>
+          <a href="/teacher/member/list">회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/attendlist">출석회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/notattendlist">미출석회원목록</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+</header>
+
+<body>
+
+<div class='main'>
+	<div class='left'>
+		<div class='text'>회원삭제</div>
+		<svg class='circle' width='280px' height='180px'>
+			<circle cx='50px' cy='180px' r='140px' fill='none' stroke='#eff0f5' stroke-width='20px'/>
+			<line x1='50px' y1='140px' x2='50px' y2='220px' style='stroke: #eff0f5; stroke-width: 15px;'/>
+		</svg>
+	</div>
+	<div class='right'>
+		<div class='title'>삭제할 회원</div>
+		<form method='POST' action='/teacher/member/deletepro'>
+			<input class='name' name='name' type='text'><br>
+			<input class='button' type='submit' value='확인'><br>
+		</form>
+	</div>
+</div>
+
+<div class="layout">
+<table class="fixed_headers">
+
+        <thead>
+        <tr>
+            <th>이름</th>
+            <th>생일</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="member : ${list}">
+            <td th:text="${member.name}"></td>
+            <td th:text="${member.birth}"></td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

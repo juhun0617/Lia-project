@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>출석 리스트 페이지</title>
+    <link href="/css/header2.css" rel="stylesheet">
+	<link href="/css/list.css" rel="stylesheet">
+</head>
+
+<header>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="/">Lia</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="/teacher/member/registration">회원등록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/delete">회원삭제</a>
+        </li>
+        <li>
+          <a href="/teacher/member/list">회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/attendlist">출석회원목록</a>
+        </li>
+        <li>
+          <a href="/teacher/member/notattendlist">미출석회원목록</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+</header>
+<body>
+
+<div class = "layout">
+<table class="fixed_headers">
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>생일</th>
+      <th>전화번호</th>
+      <th>서브 전화번호</th>
+      <th>주소</th>
+      <th>성별</th>
+    </tr>
+  </thead>
+        <tbody>
+        <tr th:each="member : ${list}">
+            <td th:text="${member.name}"></td>
+            <td th:text="${member.birth}"></td>
+            <td th:text="${member.phone_num}"></td>
+            <td th:text="${member.sub_phone_num}"></td>
+            <td th:text="${member.address}"></td>
+            <td th:text="${member.gender}"></td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+
+</div>
+</body>
+</html>
